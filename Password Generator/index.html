@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            font-family: 'Rubik', sans-serif;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+        }
+
+        .form{
+            width: 400px;
+            margin:20px 5px ;
+            display: flex;   
+            gap: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <h1 style="color: #4834d4;">Create Your Strong Password</h1>
+    <form action="#" id="frm">
+       <div class="form"> <!--to use display-flex..-->
+         <input type="text" id="outputTag">
+        <button id="copy">copy</button>
+       </div>
+       <div class="form">
+        <label for="length">Password Length</label>
+        <input type="number" id="length" value="8" min="6">
+       </div>
+       <div class="form">
+        <input type="checkbox" id="numbers">
+        <label for="numbers">Numbers</label>
+    </div>
+    <div class="form">
+        <input type="checkbox" id="Capital">
+        <label for="Capital">Capital Letters</label>
+    </div>
+    <div class="form">
+        <input type="checkbox" id="Small">
+        <label for="Small">Small</label>
+    </div>
+    <div class="form">
+        <input type="checkbox" id="Special">
+        <label for="Special">Special Characters</label>
+    </div>
+       <div class="form">
+       <button type="submit">Generate password</button>
+    </div>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
